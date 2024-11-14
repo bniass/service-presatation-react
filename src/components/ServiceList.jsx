@@ -15,9 +15,7 @@ export function ServiceList() {
         setOpen(true);
     };
 
-    function handleSubmit(event){
-        onSave(event, inputs)
-    }
+    
 
     const fetch = async () => {
         const data = await allServices()
@@ -54,10 +52,10 @@ export function ServiceList() {
                         ))}
                     </tbody>
                 </table>
-                <div className="container relative overflow-x-auto shadow-md sm:rounded-lg">
+                 <div className="container relative overflow-x-auto shadow-md sm:rounded-lg">
                 <Modal isOpen={open}>
                     <>
-                        <FormService onSave={handleSubmit} onClose={handleClose} />
+                        <FormService onClose={handleClose} />
                     </>
                 </Modal>
             </div>
