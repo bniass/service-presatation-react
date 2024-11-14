@@ -32,6 +32,13 @@ export function FormCreateCompte() {
             montant: formData.montant
         }
         const response = await creerCompte(data)
+        setFormData({
+            nom: '',
+            prenom: '',
+            dateNaissance: '',
+            telephone: '',
+            montant: ''
+        })
         console.log(response);
     };
 

@@ -43,7 +43,6 @@ export function LoginForm() {
     };
 
     return (
-        <>
             <div className="flex items-center justify-center min-h-screen bg-gray-100">
                 <form
                     onSubmit={handleLogin}
@@ -100,6 +99,5 @@ export function LoginForm() {
                     </button>
                 </ModalInfo>
             </div>
-        </>
     );
 }

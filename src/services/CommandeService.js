@@ -13,7 +13,7 @@ export const allServices = async () => {
       
       return response.data; // Retourne les données de la réponse de l'API
     } catch (error) {
-      console.error('Error getting services:', error.response);
+      console.error('Error getting services:', error);
       throw error; // Lancer l'erreur pour la capturer dans le composant
     }
   };

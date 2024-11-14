@@ -1,7 +1,6 @@
 import axios from 'axios'
 import { API_URL } from './API_URL'
 
-
 export const creerCompte = async (data) => {
     console.log(data)
     

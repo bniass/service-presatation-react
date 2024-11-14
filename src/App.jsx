@@ -14,19 +14,18 @@ const App = () => {
       <Routes>
         {/* Redirection de la route / vers /login */}
         <Route path="/" element={<Navigate to="/login" />} />
-        
+
         {/* Route pour le login sans Layout */}
         <Route path="/login" element={<LoginForm />} />
-
-        {/* Routes pour le Layout (avec Sidebar, Header, etc.) */}
-        <Route path="/" element={<Layout />}>
-          <Route path="/accueil" element={<Dashboard />} />
-          <Route path="/createcompte" element={<FormCreateCompte />} />
-          <Route path="/depot" element={<Depot />} />
-          <Route path="/creerservice" element={<FormCreateService />} />
-          <Route path="/servicelist" element={<ServiceList />} />
-          {/* Autres routes */}
-        </Route>
+          {/* Routes pour le Layout (avec Sidebar, Header, etc.) */}
+          <Route path="/" element={<Layout />}>
+            <Route path="/accueil" element={<Dashboard />} />
+            <Route path="/createcompte" element={<FormCreateCompte />} />
+            <Route path="/depot" element={<Depot />} />
+            <Route path="/creerservice" element={<FormCreateService />} />
+            <Route path="/servicelist" element={<ServiceList />} />
+            {/* Autres routes */}
+          </Route>
       </Routes>
     </Router>
   );

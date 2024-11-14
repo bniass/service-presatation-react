@@ -15,7 +15,7 @@ export function Layout() {
             <div className="flex-grow w-full flex flex-col md:ml-64 min-h-screen border border-gray-300">
                 {/* Header */}
                 <header className="bg-green shadow p-4 flex justify-between items-center w-full">
-                    <h1 className="text-xl font-semibold">GEST-SER / APPLICATION DE GESTION DE SERVICES NFORMATIQUES</h1>
+                    <h1 className="text-xl font-semibold">GEST-SER / APPLICATION DE GESTION DE SERVICES INFORMATIQUES</h1>
                     <div className="flex items-center space-x-4">
                         <img src={userImage} alt="Profil" className="w-10 h-10 rounded-full" />
                         <span className="text-gray-800 font-medium">Nom Utilisateur</span>
@@ -23,10 +23,8 @@ export function Layout() {
                 </header>
 
                 {/* Content */}
-                <main className="flex-grow flex bg-white items-center justify-center h-full w-full">
-
+                <main className="flex-grow flex bg-white items-center justify-center h-full w-full m-0 p-0">
                     <Outlet />
-
                 </main>
 
                 {/* Footer */}
@@ -35,5 +33,6 @@ export function Layout() {
                 </footer>
             </div>
         </div>
+
     );
 }
